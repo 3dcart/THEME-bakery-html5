@@ -4,14 +4,14 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
-<head>
+<!--<![endif]--><head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>[TITLE]</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 [META]
 <script type="text/javascript" src="assets/templates/common-html5/js/modernizr.min.js"></script>
 <script type="text/javascript" src="assets/templates/common-html5/js/utilities.js"></script>
+
 <link rel="stylesheet" href="assets/templates/common-html5/quicksearch/quicksearch.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="assets/templates/common-html5/css/layout.css" type="text/css" media="all" />
 <link rel="stylesheet" href="assets/templates/common-html5/css/responsive.css" type="text/css" media="screen" />
@@ -272,6 +272,8 @@
       </div>
     </div>
     <div class="wrapper"> 
+      <div id="globalFooter" class="globalFooter">[GLOBAL_FOOTER]</div>
+      <div class="clear"></div>
       <div class="ftr-col col1">
         <!--START: FRAME_LINKS-->
           <div id="modLinks">
@@ -290,7 +292,7 @@
       <div class="ftr-col col2">
         <!--START: FRAME_MAILLIST-->
         <div id="mailistBox">
-          <form method="post" name="mailing" action="mailing_list.asp?action=add" onsubmit="return mailing_list();">
+          <form method="post" name="mailing" action="mailing_list.asp?action=add" onSubmit="return mailing_list();">
             <label>[frame_mailinglist]</label>
             <div class="mailist-box">
               <input type="text" name="email" value="" placeholder="Enter Email Address" />
